@@ -259,6 +259,17 @@
       * [Governance](overview-ecosystem-and-technology/ecosystem-overview/contributors-and-entities/secret-committees/governance.md)
   * [Secret Network Dictionary](overview-ecosystem-and-technology/ecosystem-overview/secret-network-dictionary.md)
 
+## Claive AI
+
+* [🤝 Introduction](claive-ai/introduction.md)
+* [🏗️ Architecture](claive-ai/architecture.md)
+* [👩‍💻 Claive SDK](claive-ai/claive-sdk.md)
+* [🪙 Economics](claive-ai/economics.md)
+* [Smart Contract Reference](claive-ai/smart-contract-reference/README.md)
+  * [SubscriptionManager](claive-ai/smart-contract-reference/subscriptionmanager.md)
+  * [WorkerManager](claive-ai/smart-contract-reference/workermanager.md)
+  * [RewardsManager](claive-ai/smart-contract-reference/rewardsmanager.md)
+
 ## 🔧 Infrastructure
 
 * [🔓 Use SecretCLI](infrastructure/secret-cli/README.md)

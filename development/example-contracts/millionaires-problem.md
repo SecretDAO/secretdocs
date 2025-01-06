@@ -21,7 +21,7 @@ Each contract will contain these basic building blocks, with their logic being b
 
 Now we can move on to examining our contract, which solves the Millionaire's problem. We'll start by looking at the directory structure:
 
-![](<../../../.gitbook/assets/image (1) (1).png>)
+![](<../../.gitbook/assets/image (1) (1) (1).png>)
 
 For the most part, we can expect the files to contain the following data:
 
@@ -40,7 +40,7 @@ Before we jump into the code, we will go over the contract flow. We have to acce
 
 We end up with the following state machine:
 
-![Millionaire's Problem State Machine](<../../../.gitbook/assets/image (6).png>)
+![Millionaire's Problem State Machine](<../../.gitbook/assets/image (6).png>)
 
 This is a fairly naïve approach, but for the purposes of this example it is fairly straightforward. From looking at this state machine, we can expect that the implementation will contain (at minimum) the following methods:
 
@@ -331,6 +331,6 @@ Usually, you will want to define a custom return type for each separate query, w
 
 That's it! An entire Secret Contract from start to end. Thanks for taking the time to go through all of this guide (or even a small portion of it)! You should now have a good understanding of the building blocks of a contract not only on Secret Network, but for all blockchains that support CosmWasm.
 
-* [Intro to Secret Contracts](<../../../README (1).md>) - a more in-depth Secret Contract guide
+* [Intro to Secret Contracts](<../../README (1).md>) - a more in-depth Secret Contract guide
 * [CosmWasm Documentation](https://book.cosmwasm.com/) - everything you want to know about CosmWasm
 * [Secret.JS](https://docs.scrt.network/secret-network-documentation/development/secretjs/templates) - Building a web UI for a Secret Contract

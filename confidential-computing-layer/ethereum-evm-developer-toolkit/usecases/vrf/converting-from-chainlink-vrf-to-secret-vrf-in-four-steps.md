@@ -4,9 +4,9 @@
 Got improvements or suggestions on how to convert your ChainlinkVRF contract to SecretVRF ? Please ask in the Secret Network [Telegram](https://t.me/SCRTCommunity) or Discord.
 {% endhint %}
 
-Converting from Chainlink VRF to Secret VRF is easier than you expect. Within four easy steps you can free your contract from bloat and use the lightweight and faster Secret VRF solution.&#x20;
+Converting from Chainlink VRF to Secret VRF is easier than you expect. Within four easy steps you can free your contract from bloat and use the lightweight and faster Secret VRF solution.
 
-We start off with the example code from Chainlink from [here](https://docs.chain.link/vrf/v2/getting-started#how-can-i-use-chainlink-vrf):&#x20;
+We start off with the example code from Chainlink from [here](https://docs.chain.link/vrf/v2/getting-started#how-can-i-use-chainlink-vrf):
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -131,7 +131,7 @@ contract VRFD20 is VRFConsumerBaseV2 {
 
 ## Removing Chainlink bloat
 
-In the first step, we remove the imports and the inheritance of the VRFConsumerBaseV2 and add our SecretVRF interface from this. There is no&#x20;
+In the first step, we remove the imports and the inheritance of the VRFConsumerBaseV2 and add our SecretVRF interface from this. There is no
 
 ```solidity
 import {VRFCoordinatorV2Interface} from "@chainlink/contracts@1.0.0/src/v0.8/vrf/interfaces/VRFCoordinatorV2Interface.sol";
@@ -191,11 +191,11 @@ contract VRFD20 {
 
 ```
 
-Here, the behavior of the `callbackGasLimit` is different than in ChainlinkVRF. The callback Gas limit is simply all of the gas that you need to pay in order to make callback, which includes the verification of the result as well. The callback gas is the amount of gas that you have to pay for the message coming on the way back. We recommend at least using `100_000+` in Callback gas to ensure that enough gas is available. In case you did not pay enough gas, the contract callback execution will fail.&#x20;
+Here, the behavior of the `callbackGasLimit` is different than in ChainlinkVRF. The callback Gas limit is simply all of the gas that you need to pay in order to make callback, which includes the verification of the result as well. The callback gas is the amount of gas that you have to pay for the message coming on the way back. We recommend at least using `100_000+` in Callback gas to ensure that enough gas is available. In case you did not pay enough gas, the contract callback execution will fail.
 
 ## Simplifying the Constructor
 
-Next, we can also simplify the constructor since we do not need to define any extra variables or subscriptionIds. Going from this:&#x20;
+Next, we can also simplify the constructor since we do not need to define any extra variables or subscriptionIds. Going from this:
 
 ```solidity
 constructor(uint64 subscriptionId) VRFConsumerBaseV2(vrfCoordinator) {
@@ -218,7 +218,7 @@ constructor()  {
 Next, we need to slightly adjust the behavior of the function `rollDice(address roller)` function and how it calls the Request Randomness function within Secret VRF. Here, we need to use the Secret VRF gateway and call it directly instead.
 
 {% hint style="info" %}
-&#x20;Make sure to now mark this function as `payable`!
+Make sure to now mark this function as `payable`!
 {% endhint %}
 
 ```solidity
@@ -242,7 +242,7 @@ function rollDice(
 }
 ```
 
-Please make sure to actually prepay the right amount of callback gas directly as a value transfer into the contract. The callback gas is the amount of gas that you have to pay for the message coming on the way back. If you do pay less than the amount specified below, your Gateway TX will fail:&#x20;
+Please make sure to actually prepay the right amount of callback gas directly as a value transfer into the contract. The callback gas is the amount of gas that you have to pay for the message coming on the way back. If you do pay less than the amount specified below, your Gateway TX will fail:
 
 ```solidity
 /// @notice Increase the task_id to check for problems 
@@ -254,7 +254,7 @@ function estimateRequestPrice(uint32 _callbackGasLimit) private view returns (ui
 }
 ```
 
-Since this check is dependent on the current `block.basefee` of the block it is included in, it is recommended that you estimate the gas fee beforehand and add some extra overhead to it. An example of how this can be implemented in your frontend can be found in this [example](https://github.com/SecretSaturn/VRFDemo/blob/6f396e7174fcad297e26455e11b1fa3814ceea16/src/submit.ts#L124) and here:&#x20;
+Since this check is dependent on the current `block.basefee` of the block it is included in, it is recommended that you estimate the gas fee beforehand and add some extra overhead to it. An example of how this can be implemented in your frontend can be found in this [example](https://github.com/SecretSaturn/VRFDemo/blob/6f396e7174fcad297e26455e11b1fa3814ceea16/src/submit.ts#L124) and here:
 
 ```javascript
 //Then calculate how much gas you have to pay for the callback
@@ -286,4 +286,4 @@ function fulfillRandomWords(
 
 That's all that you need to convert your contract from ChainlinkVRF to SecretVRF.
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
