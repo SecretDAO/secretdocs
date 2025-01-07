@@ -9,7 +9,7 @@ description: >-
 Secret Contracts are written using the [CosmWasm framework](https://book.cosmwasm.com/). CosmWasm contracts are written in Rust, which is later compiled to WebAssembly (or WASM for short). To write our first Secret Contract, we need to set up a development environment with all of the tools required so that you can upload, instantiate, and execute your smart contracts.
 
 {% hint style="info" %}
-For a step-by-step Secret Network environment configuration video tutorial, [follow along here](https://www.youtube.com/watch?v=m64c\_3fui3o\&ab\_channel=SecretNetwork) 🎥. Otherwise, continue reading!
+For a step-by-step Secret Network environment configuration video tutorial, [follow along here](https://www.youtube.com/watch?v=m64c_3fui3o\&ab_channel=SecretNetwork) 🎥. Otherwise, continue reading!
 {% endhint %}
 
 ### Install Requirements
@@ -67,13 +67,13 @@ Download and run [`rustup-init.exe`](https://static.rust-lang.org/rustup/dist/i6
 {% endtab %}
 
 {% tab title="Windows (GUI)" %}
-Download and run [the Rust .msi installer](https://static.rust-lang.org/dist/rust-1.68.2-x86\_64-pc-windows-msvc.msi)
+Download and run [the Rust .msi installer](https://static.rust-lang.org/dist/rust-1.68.2-x86_64-pc-windows-msvc.msi)
 {% endtab %}
 {% endtabs %}
 
 #### Add WASM build target
 
-```
+```bash
 rustup target add wasm32-unknown-unknown
 ```
 
@@ -89,7 +89,7 @@ After installing Rust to configure the current shell
 
 Cargo generate is the tool you'll use to create a smart contract project. [Learn more about `cargo-generate` here.](https://doc.rust-lang.org/cargo)
 
-```
+```bash
 cargo install cargo-generate --features vendored-openssl
 ```
 
@@ -129,7 +129,7 @@ secretcli version
 {% endtab %}
 
 {% tab title="MacOS (Intel)" %}
-Download `secretcli` for your system [here](https://github.com/scrtlabs/SecretNetwork/releases/download/v1.15.0-beta.15/secretcli-macOS).
+Download `secretcli` for your system [here](https://github.com/scrtlabs/SecretNetwork/releases/download/v1.15.1/secretcli-macOS).
 
 Set the file name to `secretcli` and set it as executable
 
@@ -140,11 +140,11 @@ chmod 755 secretcli
 {% endtab %}
 
 {% tab title="MacOS (M1)" %}
-Download `secretcli` for your system [here](https://github.com/scrtlabs/SecretNetwork/releases/download/v1.15.0-beta.15/secretcli-MacOS-arm64).
+Download `secretcli` for your system [here](https://github.com/scrtlabs/SecretNetwork/releases/download/v1.15.1/secretcli-MacOS-arm64).
 
 Set the file name to `secretcli` and set it as executable
 
-```
+```bash
 mv secretcli-macOS secretcli
 chmod 755 secretcli
 ```
