@@ -6,7 +6,7 @@ description: >-
 
 # Hardware Compliance
 
-This is not a comprehensive list of compliant hardware, but rather a guide for what has been verified to work. [This list should include all current boards that will work]([https://github.com/ayeks/SGX-hardware](https://www.intel.com/content/www/us/en/architecture-and-technology/software-guard-extensions-processors.html)) this list should include all working CPUs but we cannot guarantee it's always up to date.
+This is not a comprehensive list of compliant hardware, but rather a guide for what has been verified to work. [This list should include all current CPUs that will work](https://www.intel.com/content/www/us/en/architecture-and-technology/software-guard-extensions-processors.html) this list should include all working CPUs but we cannot guarantee it's always up to date.
 
 {% hint style="danger" %}
 **CPU must support SGX via SPS.** CPUs that only support SGX via Intel ME will not work.
