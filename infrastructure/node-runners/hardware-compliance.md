@@ -36,8 +36,6 @@ The following are confirmed compliant Intel CPUs:
 Only Intel processors support SGX. AMD processors are \*NOT\* supported.
 {% endhint %}
 
-[List of Processors that Support Intel® Software Guard Extensions](https://www.intel.com/content/www/us/en/support/articles/000028173/processors.html)
-
 ## Supported Motherboards
 
 The distinguishing factor of these motherboards is that they support Intel SGX.
