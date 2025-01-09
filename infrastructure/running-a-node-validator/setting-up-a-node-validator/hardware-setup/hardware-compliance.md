@@ -38,7 +38,7 @@ Only Intel processors support SGX. AMD processors are \*NOT\* supported.
 
 ## Supported Motherboards
 
-The distinguishing factor of these motherboards is that they support Intel SGX.
+The distinguishing factor of these motherboards is not only that they support Intel SGX, but that they also support DCAP.
 
 ## Support
 
