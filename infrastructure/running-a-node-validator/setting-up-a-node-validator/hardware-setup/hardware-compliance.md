@@ -6,7 +6,7 @@ description: >-
 
 # Hardware Compliance
 
-This is not a comprehensive list of compliant hardware, but rather a guide for what has been verified to work. [This list should include all current CPUs that will work](https://www.intel.com/content/www/us/en/architecture-and-technology/software-guard-extensions-processors.html) this list should include all working CPUs but we cannot guarantee it's always up to date.
+This is not a comprehensive list of compliant hardware, but rather a guide for what has been verified to work. [This list should include all current CPUs that will work](https://www.intel.com/content/www/us/en/architecture-and-technology/software-guard-extensions-processors.html) this list should include all working CPUs but we cannot guarantee it's always up to date. Also note, a future upgrade in 2025 will see smaller enclaves excluded from the network, which will exclude the E-21xx, E-22xx, and E-23xx lines.
 
 {% hint style="danger" %}
 **CPU must support SGX via SPS.** CPUs that only support SGX via Intel ME will not work.
