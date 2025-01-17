@@ -1,6 +1,3 @@
----
-description: Coming Soon
----
-
 # RewardsManager
 
+_Coming Soon_

@@ -263,7 +263,8 @@
 
 * [🤝 Introduction](claive-ai/introduction.md)
 * [🏗️ Architecture](claive-ai/architecture.md)
-* [👩‍💻 Claive SDK](claive-ai/claive-sdk.md)
+* [👩‍💻 Claive SDK](claive-ai/claive-sdk/README.md)
+  * [Setting Up Your Environment](claive-ai/claive-sdk/setting-up-your-environment.md)
 * [🪙 Economics](claive-ai/economics.md)
 * [Smart Contract Reference](claive-ai/smart-contract-reference/README.md)
   * [SubscriptionManager](claive-ai/smart-contract-reference/subscriptionmanager.md)

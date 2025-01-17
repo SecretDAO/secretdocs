@@ -6,7 +6,7 @@ description: WorkerManager contract registers, manages and assigns Confidential 
 
 ## Overview
 
-The Worker Manager Contract is designed for managing workers in a distributed environment. Admins can register, update, or remove workers, while workers themselves can update their information such as payment wallets, IP addresses, or worker types. Additionally, the contract allows querying worker details and reports.
+The [Worker Manager Contract](https://github.com/scrtlabs/claive-contracts/blob/master/worker-manager/src/contract.rs) is designed for managing workers in a distributed environment. Admins can register, update, or remove workers, while workers themselves can update their information such as payment wallets, IP addresses, or worker types. Additionally, the contract allows querying worker details and reports.
 
 ## Contract state
 

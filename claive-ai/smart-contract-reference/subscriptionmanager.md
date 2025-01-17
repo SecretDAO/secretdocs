@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Claive Subscription Manager Contract is designed for subscription-based use cases, where an admin manages subscribers using their public keys. The contract keeps track of registered subscribers and API keys, ensuring that only authorized admins can manage them.
+The Claive [Subscription Manager Contract](https://github.com/scrtlabs/claive-contracts/blob/master/subscription-manager/src/contract.rs) is designed for subscription-based use cases, where an admin manages subscribers using their public keys. The contract keeps track of registered subscribers and API keys, ensuring that only authorized admins can manage them.
 
 ## Contract State
 
