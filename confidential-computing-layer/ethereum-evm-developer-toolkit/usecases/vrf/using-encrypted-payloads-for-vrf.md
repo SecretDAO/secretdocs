@@ -6,7 +6,7 @@ Need help with using encrypted payloads with Secretpath or want to discuss use c
 
 ## Install and import dependencies
 
-First, install all of the the dependencies via NPM:
+First, install all of the dependencies via NPM:
 
 ```bash
 npm install @solar-republic/cosmos-grpc @solar-republic/neutrino ethers secure-random

@@ -6,7 +6,7 @@
 
 #### _Alter_
 
-Private & secure messaging app built on on Secret Network
+Private & secure messaging app built on Secret Network
 
 #### _Airdrop_
 
