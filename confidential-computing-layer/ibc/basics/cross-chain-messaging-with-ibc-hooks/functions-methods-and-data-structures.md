@@ -250,7 +250,7 @@ To verify a message that was was signed through a method `cosmos arbitrary (036)
 fn verify_arbitrary<M : Display>(api:  &dyn Api, cred: &CosmosCredential<M>) -> StdResult<String>
 ```
 
-The method takes in a `CosmosCredential` struct as an argument which is a a helpful wrapper over essential required fields required for the verification:
+The method takes in a `CosmosCredential` struct as an argument which is a helpful wrapper over essential required fields required for the verification:
 
 ```rust
 pub struct CosmosCredential<M = String> 
