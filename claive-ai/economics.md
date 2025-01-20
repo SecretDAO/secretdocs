@@ -1,10 +1,12 @@
 # 🪙 Economics
 
-The goal of Claive is to create a sustainable economical model where users pay to Services and their Workers for Confidential AI services, and where the stakers of SCRT benefit from this economic activity as well.
+Claive creates a sustainable economical model where users pay for Confidential AI Services using the [`SubscriptionManager` ](https://docs.scrt.network/secret-network-documentation/claive-ai/smart-contract-reference/subscriptionmanager)contract,  which in turn benefits the stakers of SCRT.&#x20;
+
+<figure><img src="../.gitbook/assets/9APZEkrUaIFFeo9bGtnG6oHvFHE.avif" alt=""><figcaption></figcaption></figure>
 
 ### User Payments
 
-Services may choose to accept payments in Fiat, Crypto or both. All Fiat payments will be converted into sSCRT or stablecoins (SILK, USDC), and deposited into the SubscriptionManager smart contract for the address of the user. Crypto payments can be sent direction to the SubscriptionManager. Services can define subscription or pay-as-you-go models.
+Services may choose to accept payments in Fiat, Crypto or both. All Fiat payments will be converted into sSCRT or stablecoins (SILK, USDC), and deposited into the [`SubscriptionManager`](https://docs.scrt.network/secret-network-documentation/claive-ai/smart-contract-reference/subscriptionmanager) smart contract for the address of the user. Crypto payments can be sent direction to the [SubscriptionManager](https://docs.scrt.network/secret-network-documentation/claive-ai/smart-contract-reference/subscriptionmanager). Services can define subscription or pay-as-you-go models.
 
 At the end of every Epoch (e.g. 7 days), user payments are distributed between the Workers in each service proportionally to the amount of work they performed, calculated as:
 
@@ -25,10 +27,3 @@ Workers are required to stake SCRT coins in oder to be part of the system. Exact
 ### Protocol Fee
 
 Secret Governance may decide to turn on a Protocol Fee that will be charged from the user payments to Workers. The Fee will be distributed between SCRT stakers.
-
-
-
-
-
-
-
