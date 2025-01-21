@@ -1,10 +1,10 @@
 # 🏗️ Architecture
 
-Claive is implemented as an off-chain Confidential Computing layer on top of Secret Network.
+Secret AI is implemented as an off-chain Confidential Computing layer on top of Secret Network.
 
 The Confidential Computing Layer consists of off-chain workers that utilize the NVIDIA Confidential Computing technology paired with Intel TDX and AMD SEV confidential VMs to perform AI tasks, such as inference, fine-tuning and training.
 
-Claive supports multiple Services, with each Service offering a particular set of LLM models and functionality, pricing, access policy and more. Each Service can have multiple Confidential GPU workers that share the load of serving the users.&#x20;
+Secret AI supports multiple Services, with each Service offering a particular set of LLM models and functionality, pricing, access policy and more. Each Service can have multiple Confidential GPU workers that share the load of serving the users.&#x20;
 
 <figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
@@ -16,4 +16,4 @@ Workers report the amount of work (e.g. number of input and output tokens) to th
 
 The architecture also includes a decentralized and encrypted PRAG (Private RAG) database, that will allow users to share confidential data that can be later used for Retrieval-Augmented Generation on the participant LLMs. Use cases for such PRAG data may include medical data, private email archives, financial transaction data and more.
 
-Next, dive into the [Claive SDK ](https://docs.scrt.network/secret-network-documentation/claive-ai/claive-sdk)to learn how to get started using Claive SDK. :rocket:
+Next, dive into the Secret AI SDK to learn how to get started! :rocket:

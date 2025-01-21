@@ -1,8 +1,8 @@
 # 🪙 Economics
 
-Claive creates a sustainable economical model where users pay for Confidential AI Services using the [`SubscriptionManager` ](https://docs.scrt.network/secret-network-documentation/claive-ai/smart-contract-reference/subscriptionmanager)contract,  which in turn benefits the stakers of SCRT.&#x20;
+Secret AI creates a sustainable economical model where users pay for Confidential AI Services using the [`SubscriptionManager` ](https://docs.scrt.network/secret-network-documentation/claive-ai/smart-contract-reference/subscriptionmanager)contract,  which in turn benefits the stakers of SCRT.&#x20;
 
-<figure><img src="../.gitbook/assets/9APZEkrUaIFFeo9bGtnG6oHvFHE.avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Secret Network Roadmap 2025.png" alt=""><figcaption></figcaption></figure>
 
 ### User Payments
 
@@ -16,7 +16,7 @@ $$
 
 ### Protocol Rewards
 
-In order to stimulate supply of workers, especially in the initial period of the service, Secret stakers may decide to subsidize Workers by offering Claive Protocol Rewards.&#x20;
+In order to stimulate supply of workers, especially in the initial period of the service, Secret stakers may decide to subsidize Workers by offering Secret AI Protocol Rewards.&#x20;
 
 Protocol Rewards are distributed between Workers proportional to their uptime.
 

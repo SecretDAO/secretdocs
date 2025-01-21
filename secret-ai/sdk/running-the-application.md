@@ -127,8 +127,8 @@ Was it a recent separation, or is this a lingering feeling you've been carrying 
 
 ### Conclusion
 
-Congrats on your first integration with Claive SDK! :tada:
+Congrats on your first integration with Secret AI SDK! :tada:
 
-The Claive SDK provides developers with an early glimpse into integrating confidential LLMs, enabling secure and innovative applications. As a developer preview, it is designed for testing and exploration, not production use. Feedback is encouraged to help refine the SDK for future releases.&#x20;
+The Secret AI SDK provides developers with an early glimpse into integrating confidential LLMs, enabling secure and innovative applications. As a developer preview, it is designed for testing and exploration, not production use. Feedback is encouraged to help refine the SDK for future releases.&#x20;
 
 Join the [Secret Network Community Developers](../../overview-ecosystem-and-technology/secret-network-overview/) group on Telegram to share feedback and get code assistance :smile:

@@ -259,18 +259,18 @@
       * [Governance](overview-ecosystem-and-technology/ecosystem-overview/contributors-and-entities/secret-committees/governance.md)
   * [Secret Network Dictionary](overview-ecosystem-and-technology/ecosystem-overview/secret-network-dictionary.md)
 
-## Claive AI
+## Secret AI
 
-* [🤝 Introduction](claive-ai/introduction.md)
-* [🏗️ Architecture](claive-ai/architecture.md)
-* [👩‍💻 Claive SDK](claive-ai/claive-sdk/README.md)
-  * [Setting Up Your Environment](claive-ai/claive-sdk/setting-up-your-environment.md)
-  * [Running the Application](claive-ai/claive-sdk/running-the-application.md)
-* [🪙 Economics](claive-ai/economics.md)
-* [Smart Contract Reference](claive-ai/smart-contract-reference/README.md)
-  * [SubscriptionManager](claive-ai/smart-contract-reference/subscriptionmanager.md)
-  * [WorkerManager](claive-ai/smart-contract-reference/workermanager.md)
-  * [RewardsManager](claive-ai/smart-contract-reference/rewardsmanager.md)
+* [🤝 Introduction](secret-ai/introduction.md)
+* [🏗️ Architecture](secret-ai/architecture.md)
+* [👩‍💻 Secret AI SDK](secret-ai/sdk/README.md)
+  * [Setting Up Your Environment](secret-ai/sdk/setting-up-your-environment.md)
+  * [Running the Application](secret-ai/sdk/running-the-application.md)
+* [🪙 Economics](secret-ai/economics.md)
+* [Smart Contract Reference](secret-ai/smart-contract-reference/README.md)
+  * [SubscriptionManager](secret-ai/smart-contract-reference/subscriptionmanager.md)
+  * [WorkerManager](secret-ai/smart-contract-reference/workermanager.md)
+  * [RewardsManager](secret-ai/smart-contract-reference/rewardsmanager.md)
 
 ## 🔧 Infrastructure
 
