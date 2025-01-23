@@ -2,25 +2,25 @@
 
 ### Understanding the application
 
-Before you run [claive\_getting\_started.py](https://github.com/SecretFoundation/claive-getting-started/blob/main/claive_getting_started.py), let's examine the code.&#x20;
+Before you run [secret\_ai\_getting\_started.py](https://github.com/SecretFoundation/secret-ai-getting-started), let's examine the code.&#x20;
 
 1\. **Importing the Required Modules**
 
 ```python
-from claive_sdk.claive import ChatClaive
-from claive_sdk.secret import SecretClaive
+from secret_ai_sdk.secret_ai import ChatSecret
+from secret_ai_sdk.secret import Secret
 ```
 
-* **`ChatClaive`**: Handles communication with the LLM, such as sending messages and receiving responses.
-* **`SecretClaive`**: Manages secure access to LLM models and provides metadata about available models.
+* **`ChatSecret`**: Handles communication with the LLM, such as sending messages and receiving responses.
+* **`Secret`**: Manages secure access to LLM models and provides metadata about available models.
 
 2\. **Initializing the Secret Client**
 
 ```python
-secret_client = SecretClaive()
+secret_client = Secret()
 ```
 
-* Creates an instance of `SecretClaive`, which is used to interact with the Secret backend to fetch available LLM models and their connection details.
+* Creates an instance of `Secret`, which is used to interact with the Secret backend to fetch available LLM models and their connection details.
 
 3\. **Fetching Models and URLs**
 
@@ -32,48 +32,10 @@ urls = secret_client.get_urls(model=models[0])
 * **`get_models()`**: Retrieves a list of all LLM models registered with the backend.
 * **`get_urls(model=models[0])`**: For the first model in the list (`models[0]`), fetches a list of instance URLs where the model can be accessed.
 
-This code demonstrates how to interact with a confidential LLM (Large Language Model) using the `claive_sdk` Python library. Here's a breakdown of what each section does:
-
-***
-
-#### 1. **Importing the Required Modules**
-
-```python
-pythonCopyEditfrom claive_sdk.claive import ChatClaive
-from claive_sdk.secret import SecretClaive
-```
-
-* **`ChatClaive`**: Handles communication with the LLM, such as sending messages and receiving responses.
-* **`SecretClaive`**: Manages secure access to LLM models and provides metadata about available models.
-
-***
-
-#### 2. **Initializing the Secret Client**
-
-```python
-pythonCopyEditsecret_client = SecretClaive()
-```
-
-* Creates an instance of `SecretClaive`, which is used to interact with the secret backend to fetch available LLM models and their connection details.
-
-***
-
-#### 3. **Fetching Models and URLs**
-
-```python
-pythonCopyEditmodels = secret_client.get_models()
-urls = secret_client.get_urls(model=models[0])
-```
-
-* **`get_models()`**: Retrieves a list of all LLM models registered with the backend.
-* **`get_urls(model=models[0])`**: For the first model in the list (`models[0]`), fetches a list of instance URLs where the model can be accessed.
-
-***
-
 #### 4. **Setting Up the LLM Client**
 
 ```python
-claive_llm = ChatClaive(
+secret_ai_llm = ChatSecret(
     base_url=urls[0], 
     model='llama3.1:70b', 
     temperature=1.0
@@ -100,7 +62,7 @@ messages = [
 #### 6. **Invoking the Model**
 
 ```python
-response = claive_llm.invoke(messages, stream=False)
+response = secret_ai_llm.invoke(messages, stream=False)
 ```
 
 * **`invoke(messages, stream=False)`**: Sends the messages to the LLM for processing.
@@ -112,7 +74,7 @@ response = claive_llm.invoke(messages, stream=False)
 To run the sample application:
 
 ```bash
-python claive_getting_started.py
+python secret_ai_getting_started.py
 ```
 
 Upon successful installation, you should see a response:&#x20;

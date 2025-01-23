@@ -20,7 +20,7 @@ To follow along with the guide, we will be using `Anaconda` and `Python 3.12`.&#
 2. Clone the Secret AI getting started repository here:
 
 ```bash
-git clone https://github.com/SecretFoundation/claive-getting-started
+git clone https://github.com/SecretFoundation/secret-ai-getting-started.git
 ```
 
 ### Create Anaconda virtual environment
@@ -41,7 +41,7 @@ conda activate menv
 
 {% code overflow="wrap" %}
 ```bash
-pip install -r requirements.txt && pip install git+https://github.com/scrtlabs/secret-sdk-python.git@main && pip install git+https://github.com/scrtlabs/claive-sdk.git
+pip install -r requirements.txt && pip install 'secret-sdk>=1.8.1' && pip install secret-ai-sdk
 ```
 {% endcode %}
 
