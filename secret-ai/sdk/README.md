@@ -6,7 +6,7 @@ description: >-
 
 # 👩‍💻 Secret AI SDK
 
-Secret AI SDK is an advanced security layer designed to integrate seamlessly with [Langchaine's ChatOllama](https://python.langchain.com/docs/integrations/chat/ollama/), ensuring a secure and efficient API interaction. By requiring an API Key for access, it provides an additional layer of authentication and data protection, safeguarding sensitive communications.&#x20;
+Secret AI SDK is an advanced security layer designed to integrate seamlessly with [LangChain's ChatOllama](https://python.langchain.com/docs/integrations/chat/ollama/), ensuring a secure and efficient API interaction. By requiring an API Key for access, it provides an additional layer of authentication and data protection, safeguarding sensitive communications.&#x20;
 
 This security protocol enhances the reliability and safety of ChatOllama's operations, offering developers confidence in managing and deploying their applications within secure boundaries. With Secret AI SDK, users can ensure that their interactions remain private and protected against unauthorized access.
 
