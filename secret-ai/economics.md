@@ -1,8 +1,6 @@
 # 🪙 Economics
 
-Secret AI creates a sustainable economical model where users pay for Confidential AI Services using the [`SubscriptionManager` ](https://docs.scrt.network/secret-network-documentation/claive-ai/smart-contract-reference/subscriptionmanager)contract,  which in turn benefits the stakers of SCRT.&#x20;
-
-<figure><img src="../.gitbook/assets/Secret Network Roadmap 2025.png" alt=""><figcaption></figcaption></figure>
+Secret AI creates a sustainable economical model where users pay for Confidential AI Services using the [`SubscriptionManager` ](https://docs.scrt.network/secret-network-documentation/claive-ai/smart-contract-reference/subscriptionmanager)contract,  which in turn benefits the stakers of SCRT. Confidential payments, staking, and protocol rewards will be gradually implemented in 2025.&#x20;
 
 ### User Payments
 
