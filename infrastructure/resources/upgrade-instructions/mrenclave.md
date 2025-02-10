@@ -55,7 +55,7 @@ metadata->enclave_css.body.enclave_hash.m:
 0x59 0x93 0x55 0xee 0xb3 0xae 0xa4 0x0a 0x86 0xb2 0x3b 0xd5 0xd7 0xad 0xf6 0xf0
 ```
 
-## On-chain upgrade
+## On-chain upgrade preparations
 
 There should be an upgrade proposal (as usual). In addition to the common upgrade parameters, the following should be included in the upgrade plan:
 ```
@@ -65,3 +65,52 @@ There should be an upgrade proposal (as usual). In addition to the common upgrad
 ```
 
 i.e. it should include the `mrenclave` of the next secret enclave (`3cd370317fd400d29afa3b4ef943d623599355eeb3aea40a86b23bd5d7adf6f0` in the above example).
+
+The following are the steps of the upgrade:
+1. Submit an upgrade proposal and vote for it (as usual).
+2. Wait until the proposal is passed, but **before the upgrade height is reached**.
+3. Send upgrade confirmation transaction:
+   - `secretcli tx compute upgrade-proposal-passed 3cd370317fd400d29afa3b4ef943d623599355eeb3aea40a86b23bd5d7adf6f0`
+   - Make sure tx was accepted in a block
+4. Wait till the upgrade height is reached
+
+## Off-chain upgrade preparations
+
+Each validator was voting power should run this command:
+```
+secretd emergency_approve_upgrade 3cd370317fd400d29afa3b4ef943d623599355eeb3aea40a86b23bd5d7adf6f0
+```
+
+The output should look like this:
+```
+Signature: {"86BA1F5334D21B1260AE3816BC0CEEAD90CAEC0B":["9TPTQRn/uMAV/fPyc4cC1IIgzVNQM1woDbE7BDTErOo=","vi/PaNbqZ601x6c0MYIydIi+pUCBOV31TW27nj3y1PuKGZ5a17Co0FzLDNhfHWNDaGzHuxHVbD+nXlMlZd5PCA=="]
+```
+
+The goal is to reach enough voting power and enough whitelisted validators to enable the upgrade. All those outputs from different validators should be aggregated into a single json file. Then, during the upgrade, this file should be copied there:
+```
+/opt/secret/.sgx_secrets/migration_consensus.json
+```
+
+## Upgrade procedure
+
+After the upgrade evidence is received (either on-chain, or off-chain), the upgrade may proceed
+
+1. Stop the node
+2. Remove migration files that could be left from previous migrations
+   - `rm /opt/secret/.sgx_secrets/migration_*`
+3. In case it's an off-chain upgrade, make sure to put the `migration_consensus.json` file
+4. Get the self target info
+  - `secretd migrate_op 5`
+  - This is optional, but recommended, to enable local attestation rather than remote one
+5. Switch to the new enclave version
+   - Either install the new version, or download and use `check_hw` tool, while keeping the current node version
+6. Get the migration report
+   - `secretd migrate_op 1`
+7. Switch back to the previous version (needed if in step 5 the new version was installed)
+8. Export sealed data
+   - `secretd migrate_op 2`
+9. Install the new version
+10. Import the sealed data
+   - `secretd migrate_op 3`
+11. Start node
+
