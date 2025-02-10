@@ -37,13 +37,13 @@ urls = secret_client.get_urls(model=models[0])
 ```python
 secret_ai_llm = ChatSecret(
     base_url=urls[0], 
-    model='llama3.1:70b', 
+    model=models[0]', 
     temperature=1.0
 )
 ```
 
 * **`base_url=urls[0]`**: Specifies the first URL in the list as the endpoint to connect to the LLM.
-* **`model='llama3.1:70b'`**: Specifies the model to use (e.g., Llama 3.1 with 70 billion parameters).
+* **`model=models[0]`**: Specifies the model to use (e.g., Llama or Deepseek, etc).
 * **`temperature=1.0`**: Configures the "creativity" of the model's responses. Higher values produce more varied outputs, while lower values make responses more deterministic.
 
 #### 5. **Defining the Chat Messages**

@@ -10,7 +10,7 @@ description: >-
 Secret AI SDK is a developer preview and is not intended for production use.&#x20;
 {% endhint %}
 
-[Secret AI SDK](https://github.com/scrtlabs/secret-ai-sdk) is an advanced security layer designed to integrate seamlessly with [LangChain's ChatOllama](https://python.langchain.com/docs/integrations/chat/ollama/), ensuring a secure and efficient API interaction. To begin utilizing Secret AI SDK with LangChain's ChatOllama, follow these installation and configuration steps:
+[Secret AI SDK](https://github.com/scrtlabs/secret-ai-sdk) is an advanced security layer designed to integrate seamlessly with [DeepSeek](https://www.deepseek.com/), ensuring a secure and efficient API interaction. To begin utilizing Secret AI SDK, follow these installation and configuration steps:
 
 ### Install Requirements
 
