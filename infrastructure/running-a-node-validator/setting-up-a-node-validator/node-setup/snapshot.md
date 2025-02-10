@@ -28,10 +28,11 @@ All of the above steps can also be done manually if you wish.
 
 ### Download snapshot
 
-Quicksync / snapshots are provided by [Lavender.five Nodes](https://services.lavenderfive.com/mainnet/secretnetwork/snapshot).
+Quicksync / snapshots are provided by [Lavender.five Nodes](https://www.lavenderfive.com/tools/secretnetwork/snapshot).
 
-```
-wget -O secret.tar.zst https://snapshots.lavenderfive.com/snapshots/secretnetwork/latest.tar.zst
+```bash
+curl -L https://snapshots.lavenderfive.com/snapshots/secretnetwork/secretnetwork_18259769.tar.zst | tar -Ilz4 -xf - -C $HOME/.secretd
+mv $HOME/.secretd/priv_validator_state.json.backup $HOME/.secretd/data/priv_validator_state.json
 ```
 
 ### Install dependencies
@@ -43,7 +44,7 @@ sudo apt install snapd zst pv
 
 ### Delete old data
 
-Reset your node.&#x20;
+Reset your node.
 
 ```bash
 sudo systemctl stop secret-node
@@ -70,4 +71,3 @@ mv addrbook.json $HOME/.secretd/config
 ```bash
 sudo systemctl restart secret-node && journalctl -fu secret-node
 ```
-
