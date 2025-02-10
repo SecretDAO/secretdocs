@@ -54,7 +54,7 @@ secretd tendermint unsafe-reset-all --home $HOME/.secretd
 ### Decompress snapshot
 
 ```bash
-tar -axf secret.tar.zst
+tar -axf secret.tar.zst -C $HOME/.secretd
 ```
 
 ### Download latest addrbook
