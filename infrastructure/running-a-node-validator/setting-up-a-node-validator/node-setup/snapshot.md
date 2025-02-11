@@ -39,7 +39,7 @@ mv $HOME/.secretd/priv_validator_state.json.backup $HOME/.secretd/data/priv_vali
 
 ```bash
 sudo apt update
-sudo apt install snapd zst pv
+sudo apt install snapd zstd pv
 ```
 
 ### Delete old data
