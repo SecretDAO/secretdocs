@@ -23,7 +23,7 @@ Randomness is essential in many applications, including:
 3. Secret Network's in-SGX light client prevents the proposer from simulating a block before all other validators sign it. Consequently, the proposer cannot gain maximal extractable value (MEV) by generating random seeds until they find a favorable simulation of the block.
 4.  Before calling the contract, the chain injects `env.block.random = hkdf_sha256(block_random_seed + wasm_call_count)`.
 
-    Thus each contract call gets a unique random seed.
+    Thus each contract call gets a unique and secure derivative of the block seed so that nobody can deduce anyone else's secret.
 
 {% hint style="info" %}
 For a more in-depth explanation of why and how this method of randomness works feel free to read the [feature explainer](../secret-contract-fundamentals/secret-vrf-on-chain-randomness.md)
