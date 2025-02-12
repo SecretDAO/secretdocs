@@ -24,7 +24,7 @@ This seed is then included in the block header and signed by all validators who 
 
 Secret Network's in-SGX light client prevents the proposer from simulating a block before all other validators sign it. Consequently, the proposer cannot gain maximal extractable value (MEV) by generating random seeds until they find a favorable simulation of the block.
 
-Before calling the contract, the chain injects `env.block.random = hkdf_sha256(block_random_seed + wasm_call_count)`.
+Before calling the contract, the chain injects `env.block.random = hkdf_sha256(block_random_seed + unique_contract_key + wasm_call_count)`.
 
 Thus, each contract call gets a unique and secure derivative of the block seed so that nobody can deduce anyone else's secret.
 
@@ -34,9 +34,9 @@ Secret VRF provides perfectly private randomness. The `env.block.random` is secu
 
 #### Isolation and Security Guarantees
 
-* The VRF seed cannot be reconstructed or seen outside of the contract execution (assuming the contract itself does not leak it).
+* The contract's VRF value `env.block.random` cannot be reconstructed or seen outside of the contract execution (assuming the contract itself does not leak it).
 * The only place where the block VRF seed exists in plaintext is inside the enclave.
-* It is impossible to derive or access the VRF seed outside the enclave. Even validators do not have access to the unencrypted seed once a block is committed.
+* It is impossible to derive or access the block VRF seed outside the enclave. Even validators do not have access to the unencrypted seed once a block is committed.
 * The contract's random number is a secure source for internal private key generation.
 
 #### Implications for Developers
