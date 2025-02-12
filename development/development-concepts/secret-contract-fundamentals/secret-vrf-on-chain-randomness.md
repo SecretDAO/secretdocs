@@ -36,6 +36,12 @@ The process of block proposal and execution involves a crucial intermediary step
 2. The block proposer cannot predict or influence the entropy generation&#x20;
 3. Outside actors cannot predict random numbers before they are used to compute network transactions
 
+{% hint style="info" %}
+Random is set before each contract execution (`init`, `execute` or `migrate`) and is derived from [random\_seed, contract\_key, height and message\_counter](https://github.com/scrtlabs/SecretNetwork/blob/master/cosmwasm/enclaves/shared/contract-engine/src/contract_operations.rs#L704-L721).
+
+View derive\_random implementation for Secret Network [here](https://github.com/scrtlabs/SecretNetwork/blob/master/cosmwasm/enclaves/shared/contract-engine/src/random.rs#L23-L50) :nerd:
+{% endhint %}
+
 Secret Network achieves this by implementing the following privacy network consensus:&#x20;
 
 ### **Secret Network Consensus Schema**
