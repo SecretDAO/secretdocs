@@ -68,7 +68,7 @@ This function awaits [`SetupKeplr()`](https://github.com/scrtlabs/examples/blob/
 
 ```javascript
     const chainID = "pulsar-3",
-    const url = "https://api.pulsar.scrttestnet.com",
+    const url = "https://pulsar.lcd.secretnodes.com",
     
     const accounts = await keplrOfflineSigner.getAccounts();
 

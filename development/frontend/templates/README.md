@@ -8,7 +8,7 @@ description: Learn how to install and use SecretJS.
 
 In this tutorial you will learn how to use Secret.js to connect a web3 wallet, upload a contract, instantiate a contract, execute a contract, and query a contract, amongst other use cases! For the complete Secret.js docs, see [here](https://secretjs.scrt.network/).&#x20;
 
-All of the following examples use the `pulsar-3` testnet with LCD endpoint `https://api.pulsar3.scrttestnet.com`.
+All of the following examples use the `pulsar-3` testnet with LCD endpoint `https://pulsar.lcd.secretnodes.com`.
 
 {% hint style="info" %}
 Public LCD endpoints can be found [here](https://docs.scrt.network/secret-network-documentation/development/resources-api-contract-addresses/connecting-to-the-network) for both mainnet and testnet.
@@ -37,7 +37,7 @@ const wallet = new Wallet("Your mnemonic words go here");
 
 const secretjs = new SecretNetworkClient({
   chainId: "pulsar-3",
-  url: "https://api.pulsar3.scrttestnet.com",
+  url: "https://pulsar.lcd.secretnodes.com",
   wallet: wallet,
   walletAddress: wallet.address,
 });
@@ -55,7 +55,7 @@ const contract_wasm = fs.readFileSync("../contract/contract.wasm");
 
 const secretjs = new SecretNetworkClient({
   chainId: "pulsar-3",
-  url: "https://api.pulsar3.scrttestnet.com",
+  url: "https://pulsar.lcd.secretnodes.com",
   wallet: wallet,
   walletAddress: wallet.address,
 });
@@ -102,7 +102,7 @@ const contract_wasm = fs.readFileSync("../contract/contract.wasm");
 
 const secretjs = new SecretNetworkClient({
   chainId: "pulsar-3",
-  url: "https://api.pulsar3.scrttestnet.com",
+  url: "https://pulsar.lcd.secretnodes.com",
   wallet: wallet,
   walletAddress: wallet.address,
 });

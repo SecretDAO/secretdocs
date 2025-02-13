@@ -64,7 +64,7 @@ Start by opening the `my-counter-contract` project folder in your text editor. I
 2. In your `my-counter-contract/node` folder, create a new javascript file––I chose to name mine `upload.js`.
 3. Run `npm init -y` to create a package.json file.
 4. Add `"type" : "module"` to your package.json file.
-5. Install secret.js and dotenv: `npm i secretjs@v1.15.0-beta.1 dotenv`
+5. Install secret.js and dotenv: `npm i secretjs dotenv`
 6. Create a `.env` file in your `node` folder, and add the variable `MNEMONIC` along with your wallet address seed phrase, like so:
 
 <pre><code><strong>MNEMONIC=grant rice replace explain federal release fix clever romance raise often wild taxi quarter soccer fiber love must tape steak together observe swap guitar
@@ -130,7 +130,7 @@ Note the **chainId** and the **url** that we are using. This chainId and url are
 ```javascript
 const secretjs = new SecretNetworkClient({
   chainId: "pulsar-3",
-  url: "https://api.pulsar.scrttestnet.com",
+  url: "https://pulsar.lcd.secretnodes.com",
   wallet: wallet,
   walletAddress: wallet.address,
 });

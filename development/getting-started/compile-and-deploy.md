@@ -9,7 +9,7 @@ description: >-
 Now that you've set up your development environment, we are going to learn how to compile, upload, and instantiate a smart contract using SecretCLI in your testnet environment.
 
 {% hint style="info" %}
-For a step-by-step Secret Network SecretCLI video tutorial, [follow along here](https://www.youtube.com/watch?v=ZpUz-9sORho\&ab\_channel=SecretNetwork) 🎥. Otherwise, continue reading!
+For a step-by-step Secret Network SecretCLI video tutorial, [follow along here](https://www.youtube.com/watch?v=ZpUz-9sORho\&ab_channel=SecretNetwork) 🎥. Otherwise, continue reading!
 {% endhint %}
 
 We will be working with a basic [counter contract](https://github.com/SecretFoundation/secret-template), which allows users to increment a counter variable by 1 and also reset the counter. If you've never worked with smart contracts written in Rust before that is perfectly fine. By the end of this tutorial you will know how to upload and instantiate a Secret Network smart contract in your terminal using SecretCLI.
@@ -91,7 +91,7 @@ To fund the wallet so that it can execute transactions, you can get testnet toke
 Finally, we can upload our contract:
 
 ```bash
- secretcli tx compute store contract.wasm.gz --gas 5000000 --from myWallet --chain-id pulsar-3 --node https://rpc.testnet.secretsaturn.net --fees=70000uscrt
+ secretcli tx compute store contract.wasm.gz --gas 5000000 --from myWallet --chain-id pulsar-3 --node https://pulsar.rpc.secretnodes.com --fees=70000uscrt
 ```
 
 {% hint style="info" %}
@@ -105,7 +105,7 @@ Finally, we can upload our contract:
 To verify whether storing the code has been successful, we can use SecretCLI to query the chain:
 
 ```bash
-secretcli query compute list-code --chain-id pulsar-3 --node https://rpc.testnet.secretsaturn.net
+secretcli query compute list-code --chain-id pulsar-3 --node https://pulsar.rpc.secretnodes.com
 ```
 
 Which should give an output similar to the following:
@@ -122,7 +122,7 @@ In the previous step we stored the contract code on the blockchain. To actually 
 
 {% code overflow="wrap" %}
 ```bash
-secretcli tx compute instantiate <your-code-id> '{"count": 1}' --from <name> --label <your-label> --chain-id pulsar-3 --node https://rpc.testnet.secretsaturn.net --fees=70000uscrt -y
+secretcli tx compute instantiate <your-code-id> '{"count": 1}' --from <name> --label <your-label> --chain-id pulsar-3 --node https://pulsar.rpc.secretnodes.com --fees=70000uscrt -y
 ```
 {% endcode %}
 
@@ -137,7 +137,7 @@ Let's check that the instantiate command worked:
 
 {% code overflow="wrap" %}
 ```bash
-secretcli query compute list-contract-by-code <your-code-id> --chain-id pulsar-3 --node https://rpc.testnet.secretsaturn.net 
+secretcli query compute list-contract-by-code <your-code-id> --chain-id pulsar-3 --node https://pulsar.rpc.secretnodes.com 
 ```
 {% endcode %}
 

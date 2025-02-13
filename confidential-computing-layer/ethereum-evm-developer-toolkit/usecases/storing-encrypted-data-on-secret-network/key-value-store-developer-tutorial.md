@@ -182,7 +182,7 @@ This data is encrypted and stored inside of your Secret smart contract. The data
 
 ```javascript
 const secretjs = new SecretNetworkClient({
-                url: "https://lcd.testnet.secretsaturn.net",
+                url: "https://pulsar.lcd.secretnodes.com",
                 chainId: "pulsar-3",
             });
 

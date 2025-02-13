@@ -23,7 +23,7 @@ secretcli config set client output json
 ## Testnet
 
 ```bash
-secretcli config set client node https://rpc.pulsar.scrttestnet.com/
+secretcli config set client node https://pulsar.rpc.secretnodes.com
 
 secretcli config set client chain-id pulsar-3
 

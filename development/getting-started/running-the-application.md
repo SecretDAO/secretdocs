@@ -22,7 +22,7 @@ Let's query our counter smart contract to return the current count. It should be
 
 {% code overflow="wrap" %}
 ```bash
-secretcli query compute query <your-contract-address> '{"get_count": {}}' --chain-id pulsar-3 --node https://rpc.testnet.secretsaturn.net 
+secretcli query compute query <your-contract-address> '{"get_count": {}}' --chain-id pulsar-3 --node https://pulsar.rpc.secretnodes.com 
 ```
 {% endcode %}
 
@@ -45,7 +45,7 @@ An **Execute Message** is used for handling messages which modify contract state
 The counter contract consists of two execute messages: `increment{}`, which increments the count by 1, and `reset{}`, which resets the count to any `i32` you want. The current count is 1, let's call the Execute Message `increment{}` to increase the contract count by 1:
 
 ```bash
-secretcli tx compute execute <your-contract-address> '{"increment": {}}' --from <your-wallet> --chain-id pulsar-3 --node https://rpc.testnet.secretsaturn.net --fees=70000uscrt
+secretcli tx compute execute <your-contract-address> '{"increment": {}}' --from <your-wallet> --chain-id pulsar-3 --node https://pulsar.rpc.secretnodes.com --fees=70000uscrt
 ```
 
 {% hint style="success" %}
@@ -60,7 +60,7 @@ Nice work! Now we can query the contract once again to see if the contract state
 
 {% code overflow="wrap" %}
 ```bash
-secretcli query compute query <your-contract-address> '{"get_count": {}}' --chain-id pulsar-3 --node https://rpc.testnet.secretsaturn.net 
+secretcli query compute query <your-contract-address> '{"get_count": {}}' --chain-id pulsar-3 --node https://pulsar.rpc.secretnodes.com 
 ```
 {% endcode %}
 
@@ -74,7 +74,7 @@ Now, we will call one final execute message, `reset{}`. This will reset the coun
 
 {% code overflow="wrap" %}
 ```bash
- secretcli tx compute execute <your-contract-address> '{"reset": {"count": 0}}' --from <your-wallet> --chain-id pulsar-3 --node https://rpc.testnet.secretsaturn.net --fees=70000uscrt
+ secretcli tx compute execute <your-contract-address> '{"reset": {"count": 0}}' --from <your-wallet> --chain-id pulsar-3 --node https://pulsar.rpc.secretnodes.com --fees=70000uscrt
 ```
 {% endcode %}
 

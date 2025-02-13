@@ -199,7 +199,6 @@
     * [Cross-Chain NFTs with SecretPath and OpenAI](confidential-computing-layer/ethereum-evm-developer-toolkit/usecases/nfts.md)
     * [Tokens](confidential-computing-layer/ethereum-evm-developer-toolkit/usecases/tokens/README.md)
       * [From EVM to Secret](confidential-computing-layer/ethereum-evm-developer-toolkit/usecases/tokens/from-evm-to-secret.md)
-      * [From Secret to EVM](confidential-computing-layer/ethereum-evm-developer-toolkit/usecases/tokens/from-secret-to-evm.md)
   * [Supported Networks](confidential-computing-layer/ethereum-evm-developer-toolkit/supported-networks/README.md)
     * [EVM](confidential-computing-layer/ethereum-evm-developer-toolkit/supported-networks/evm/README.md)
       * [EVM Mainnet](confidential-computing-layer/ethereum-evm-developer-toolkit/supported-networks/evm/evm-mainnet-gateway-contracts.md)
