@@ -196,7 +196,6 @@
       * [Using encrypted payloads for VRF](confidential-computing-layer/ethereum-evm-developer-toolkit/usecases/vrf/using-encrypted-payloads-for-vrf.md)
       * [Converting from Chainlink VRF to Secret VRF in four steps](confidential-computing-layer/ethereum-evm-developer-toolkit/usecases/vrf/converting-from-chainlink-vrf-to-secret-vrf-in-four-steps.md)
     * [Confidential Document Sharing](confidential-computing-layer/ethereum-evm-developer-toolkit/usecases/confidential-document-sharing.md)
-    * [Cross-Chain NFTs with SecretPath and OpenAI](confidential-computing-layer/ethereum-evm-developer-toolkit/usecases/nfts.md)
     * [Tokens](confidential-computing-layer/ethereum-evm-developer-toolkit/usecases/tokens/README.md)
       * [From EVM to Secret](confidential-computing-layer/ethereum-evm-developer-toolkit/usecases/tokens/from-evm-to-secret.md)
   * [Supported Networks](confidential-computing-layer/ethereum-evm-developer-toolkit/supported-networks/README.md)

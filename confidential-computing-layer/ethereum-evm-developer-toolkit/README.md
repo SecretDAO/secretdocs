@@ -18,7 +18,6 @@ description: >-
 * [confidential-voting](usecases/confidential-voting/ "mention")
 * [sealed-bid-auction](usecases/sealed-bid-auction/ "mention")
 * [vrf](usecases/vrf/ "mention")
-* [nfts.md](usecases/nfts.md "mention")
 * [tokens](usecases/tokens/ "mention")
 
 **Supported Networks**
